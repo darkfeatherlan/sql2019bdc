@@ -1,1 +1,4 @@
 kubectl taint nodes --all node-role.kubernetes.io/master-
+
+# The connection to the server 10.168.230.16:6443 was refused - did you specify the right host or port?
+https://discuss.kubernetes.io/t/the-connection-to-the-server-host-6443-was-refused-did-you-specify-the-right-host-or-port/552/5  
