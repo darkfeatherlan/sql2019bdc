@@ -1,6 +1,6 @@
 參考資料
 
-https://blog.gtwang.org/linux/ubuntu-linux-1804-configure-network-static-ip-address-tutorial/  Ubuntu Linux 18.04 設定靜態網路 IP 位址教學
+https://blog.gtwang.org/linux/ubuntu-linux-1804-configure-network-static-ip-address-tutorial/     Ubuntu Linux 18.04 設定靜態網路 IP 位址教學
 
 https://docs.microsoft.com/zh-tw/sql/azdata/install/deploy-install-azdata-linux-package?view=sql-server-ver15  使用 apt 安裝 Azure Data CLI (azdata)
 
