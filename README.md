@@ -1,3 +1,11 @@
+參考資料
+
+https://docs.microsoft.com/zh-tw/sql/azdata/install/deploy-install-azdata-linux-package?view=sql-server-ver15  使用 apt 安裝 Azure Data CLI (azdata)
+
+https://docs.microsoft.com/zh-tw/sql/big-data-cluster/deployment-guidance?view=sql-server-ver15  在 Kubernetes 上部署 SQL Server 巨量資料叢集
+
+https://github.com/calebhailey/homelab/issues/3  Kubernetes單node會出問題解決方案
+
 # Create a Kubernetes cluster using Kubeadm on Ubuntu 16.04 LTS or 18.04 LTS
 
 In this example, we will deploy Kubernetes over multiple Linux machines (physical or virtualized) using kubeadm utility. These instructions have been tested primarily with Ubuntu 16.04 LTS & 18.04 LTS versions.
