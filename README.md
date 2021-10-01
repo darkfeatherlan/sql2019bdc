@@ -80,3 +80,10 @@ EOF
 
 chmod +x clean-volumes-agents.sh
 ```
+
+### 新增podpreset功能
+修改
+/etc/kubernetes/manifests/kube-apiserver.yaml
+ 在 - command: 修改/加入以下2條
+    - --enable-admission-plugins=NodeRestriction,PodPreset  
+    - --runtime-config=settings.k8s.io/v1alpha1=true
