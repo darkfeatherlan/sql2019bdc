@@ -8,6 +8,8 @@ https://docs.microsoft.com/zh-tw/sql/big-data-cluster/deployment-guidance?view=s
 
 https://github.com/calebhailey/homelab/issues/3  Kubernetes單node會出問題解決方案
 
+https://www.itread01.com/qll.html 修改時區
+
 # Create a Kubernetes cluster using Kubeadm on Ubuntu 16.04 LTS or 18.04 LTS
 
 In this example, we will deploy Kubernetes over multiple Linux machines (physical or virtualized) using kubeadm utility. These instructions have been tested primarily with Ubuntu 16.04 LTS & 18.04 LTS versions.
