@@ -5,6 +5,7 @@ https://blog.gtwang.org/linux/ubuntu-linux-1804-configure-network-static-ip-addr
 https://docs.microsoft.com/zh-tw/sql/azdata/install/deploy-install-azdata-linux-package?view=sql-server-ver15  使用 apt 安裝 Azure Data CLI (azdata)
 
 https://docs.microsoft.com/zh-tw/sql/big-data-cluster/deployment-guidance?view=sql-server-ver15  在 Kubernetes 上部署 SQL Server 巨量資料叢集
+
 https://learn.microsoft.com/zh-tw/sql/big-data-cluster/release-notes-big-data-cluster?view=sql-server-ver15 BDC的版本資訊
 
 https://github.com/calebhailey/homelab/issues/3  Kubernetes單node會出問題解決方案
