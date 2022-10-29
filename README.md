@@ -97,7 +97,7 @@ chmod +x clean-volumes-agents.sh
 https://learn.microsoft.com/zh-tw/sql/big-data-cluster/configure-bdc-postdeployment?view=sql-server-ver15 新版可直接設定時區
 
 ```
-azdata bdc settings set --settings bdc.timezone=Asia/Taipei
+azdata bdc settings set --settings bdc.timezone=Asia/Taipei 一直失敗，嘗試改成Asia/Shanghai
 azdata bdc settings apply
 azdata bdc upgrade -t 2019-CU6-ubuntu-16.04 --controller-timeout=40 --component-timeout=40 --stability-threshold=3 供參考用，怕逾時應該可以增加timeout時間
 ```
