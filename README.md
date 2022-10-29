@@ -93,3 +93,11 @@ chmod +x clean-volumes-agents.sh
     - --enable-admission-plugins=NodeRestriction,PodPreset  
     - --runtime-config=settings.k8s.io/v1alpha1=true
 ```
+
+https://learn.microsoft.com/zh-tw/sql/big-data-cluster/configure-bdc-postdeployment?view=sql-server-ver15 新版可直接設定時區
+
+```
+azdata bdc settings set --settings bdc.timezone=Asia/Taipei
+azdata bdc settings apply
+azdata bdc upgrade -t 2019-CU6-ubuntu-16.04 --controller-timeout=40 --component-timeout=40 --stability-threshold=3 供參考用，怕逾時應該可以增加timeout時間
+```
