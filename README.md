@@ -9,6 +9,7 @@ https://docs.microsoft.com/zh-tw/sql/big-data-cluster/deployment-guidance?view=s
 https://learn.microsoft.com/zh-tw/sql/big-data-cluster/release-notes-big-data-cluster?view=sql-server-ver15 BDC的版本資訊
 
 https://github.com/calebhailey/homelab/issues/3  Kubernetes單node會出問題解決方案
+kubectl taint nodes --all node-role.kubernetes.io/master-
 
 https://www.itread01.com/qll.html 修改時區
 
