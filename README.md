@@ -98,7 +98,20 @@ chmod +x clean-volumes-agents.sh
 https://learn.microsoft.com/zh-tw/sql/big-data-cluster/configure-bdc-postdeployment?view=sql-server-ver15 新版可直接設定時區
 
 ```
-azdata bdc settings set --settings bdc.timezone=Asia/Taipei 一直失敗，嘗試改成Asia/Shanghai
+azdata bdc settings set --settings bdc.timezone=Asia/Taipei 一直失敗，嘗試改成Asia/Shanghai，還是不行，已放棄
 azdata bdc settings apply
 azdata bdc upgrade -t 2019-CU6-ubuntu-16.04 --controller-timeout=40 --component-timeout=40 --stability-threshold=3 供參考用，怕逾時應該可以增加timeout時間
 ```
+
+還原資料庫後帳號可能無法對應，因此需要用以下方式對應
+
+ALTER USER
+使用此方式可以修改登入USER的名稱或變更其預設結構描述
+在這個狀況下我們可以用LOGIN，去更正不相符的 SID
+```
+USE XXDB
+GO
+ALTER USER accout_test
+WITH LOGIN = accout_test;
+```
+
