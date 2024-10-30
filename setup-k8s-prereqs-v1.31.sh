@@ -15,6 +15,8 @@ KUBE_DPKG_VERSION=1.31.2-1.1
 apt-get update
 apt-get install -y ebtables ethtool
 apt-get install -y docker.io
+＃拉取正确的 Pause 镜像（解决警告）
+sudo docker pull registry.k8s.io/pause:3.10
 apt-get install -y apt-transport-https
 apt-get install -y kubelet=$KUBE_DPKG_VERSION kubeadm=$KUBE_DPKG_VERSION kubectl=$KUBE_DPKG_VERSION
 curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
