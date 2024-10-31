@@ -10,6 +10,8 @@ https://learn.microsoft.com/zh-tw/sql/big-data-cluster/release-notes-big-data-cl
 
 https://github.com/calebhailey/homelab/issues/3  Kubernetes單node會出問題解決方案
 kubectl taint nodes --all node-role.kubernetes.io/master-
+新版應該改為
+kubectl taint nodes --all node-role.kubernetes.io/control-plane:NoSchedule-
 
 https://www.itread01.com/qll.html 修改時區
 
