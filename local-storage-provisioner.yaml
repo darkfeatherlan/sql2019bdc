@@ -25,7 +25,7 @@ metadata:
   name: local-storage
 provisioner: kubernetes.io/no-provisioner
 volumeBindingMode: WaitForFirstConsumer
-reclaimPolicy: Delete
+reclaimPolicy: Retain
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -37,6 +37,7 @@ data:
     local-storage:
        hostDir: /mnt/local-storage
        mountDir:  /mnt/local-storage
+       reclaimPolicy: Retain
        blockCleanerCommand:
          - "/scripts/shred.sh"
          - "2" 
@@ -59,7 +60,7 @@ spec:
     spec:
       serviceAccountName: local-storage-admin
       containers:
-        - image: "quay.io/external_storage/local-volume-provisioner:v2.1.0"
+        - image: "quay.io/external_storage/local-volume-provisioner:v2.4.0"
           imagePullPolicy: "Always"
           name: provisioner 
           securityContext:
